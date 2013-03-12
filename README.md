@@ -16,8 +16,10 @@ There are a number of different csv to array javascript functions out there but 
 
 Example:
 
--    jsStringLexer.csv2array('"foo","a\\"b\\"c,bar","baz");
-
+-    ```jsStringLexer.csv2array('"1","a\\"b\\"c,2","3"');``` - 3 columns, second one is "a\"b\"c,2"
+-    ```jsStringLexer.csv2array('1,2,3');``` - simple 3 columns
+-    ```jsStringLexer.csv2array('"quoted",notquoted,,"last was skipped"');``` - Text can be quoted or not quoted, or left out entirely
+-    ```jsStringLexer.csv2array('"a","b,c","d"');``` - commas within a quoted piece are ignored as separators
 
 ## Contributing
 
