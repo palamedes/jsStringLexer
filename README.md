@@ -8,6 +8,8 @@ All methods in this library are published within the namespace ```jsStringLexer`
 
 Currently the following methods are available;
 
+## csv2array
+
 **Method** ```Array jsStringLexer.csv2array(String csv)```
 
 Takes a CSV string and parses it into an array of arrays.  Each line is it's own array.
