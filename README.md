@@ -20,6 +20,7 @@ Example:
 -    ```jsStringLexer.csv2array('1,2,3');``` - simple 3 columns
 -    ```jsStringLexer.csv2array('"quoted",notquoted,,"last was skipped"');``` - Text can be quoted or not quoted, or left out entirely
 -    ```jsStringLexer.csv2array('"a","b,c","d"');``` - commas within a quoted piece are ignored as separators
+-    ```jsStringLexer.csv2array('1,2,3\r1,2,3\r');``` - simple 3 columns with 2 rows, trailing \r is ignored on last line
 
 ## Contributing
 
